@@ -1,0 +1,17 @@
+# Logan's Fence LLC & Construction
+
+> Fence and welding contractor serving the Dallas–Fort Worth Metroplex, Texas. Builds wood fences, wrought (rod) iron fences, sliding gates and pergolas, and offers welding repairs plus junk haul-away and clean-ups. Fully bonded, 10+ years of experience.
+
+- Phone: 469-605-1233 (call or text)
+- Email: logansfence@yahoo.com
+- Service area: all of Dallas–Fort Worth, including Dallas, Fort Worth, Arlington, Plano, Irving, Garland, Frisco, McKinney, Grand Prairie, Mesquite, Carrollton, Denton, Richardson, Lewisville, Allen and Rowlett
+- Quotes: request via the contact form or by phone; the crew visits on site to measure and price
+
+## Pages
+
+- [Home](https://logansfence.netlify.app/): overview, services, recent work, reviews, service area
+- [Services](https://logansfence.netlify.app/services): wood fences, wrought iron fences, sliding gates, pergolas, welding, junk haul-away
+- [Gallery](https://logansfence.netlify.app/gallery): photos of completed projects
+- [About](https://logansfence.netlify.app/about): company background and values
+- [Reviews](https://logansfence.netlify.app/reviews): customer testimonials
+- [Contact](https://logansfence.netlify.app/contact): phone, email, quote request form

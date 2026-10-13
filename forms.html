@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Forms</title><meta name="robots" content="noindex"></head>
+<body>
+<!-- Netlify detects these at deploy time; the live forms on the site submit to them via fetch. -->
+<form name="quote" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input name="bot-field"><input name="name"><input name="phone"><input name="service"><input name="city">
+</form>
+<form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input name="bot-field"><input name="name"><input name="phone"><input name="email"><input name="service"><input name="city"><textarea name="message"></textarea>
+</form>
+</body>
+</html>
