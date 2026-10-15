@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,8 +21,8 @@
   </sc-if>
   <div style="background:{{ navBg }};backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:{{ navShadow }};transition:box-shadow .4s ease;">
     <nav style="max-width:1280px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:28px;">
-      <a href="index.html" aria-label="Logan's Fence home" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;margin-right:auto;">
-        <img src="assets/mark.png" alt="" style="height:46px;width:auto;display:block;">
+      <a href="/" aria-label="Logan's Fence home" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;margin-right:auto;">
+        <img loading="eager" width="570" height="345" src="assets/mark.png" alt="" style="height:46px;width:auto;display:block;">
         <span style="display:flex;flex-direction:column;line-height:1;">
           <span style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:800;font-size:21px;letter-spacing:.03em;">LOGAN’S</span>
           <span style="font-size:9.5px;letter-spacing:.3em;color:#e2a86c;margin-top:6px;font-weight:700;">FENCE LLC &amp; CONSTRUCTION</span>
@@ -34,7 +34,7 @@
             <a href="{{ it.href }}" style="position:relative;color:{{ it.color }};text-decoration:none;font-size:15px;font-weight:600;padding:8px 0;transition:color .2s;" style-hover="color:#e2a86c;">{{ it.label }}<span style="position:absolute;left:0;right:0;bottom:0;height:2px;border-radius:2px;background:linear-gradient(90deg,#e2a86c,#b86f38);transform:{{ it.bar }};transform-origin:left;transition:transform .3s;"></span></a>
           </sc-for>
         </div>
-        <a href="Contact.dc.html" style="display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:999px;background:linear-gradient(135deg,#d48d4e,#a85c2a);color:#fff;font-weight:700;font-size:14.5px;text-decoration:none;box-shadow:0 10px 26px -10px rgba(212,141,78,.9);transition:transform .25s,box-shadow .25s;" style-hover="transform:translateY(-2px);box-shadow:0 16px 32px -10px rgba(212,141,78,1);">Get a quote<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+        <a href="/contact" style="display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:999px;background:linear-gradient(135deg,#d48d4e,#a85c2a);color:#fff;font-weight:700;font-size:14.5px;text-decoration:none;box-shadow:0 10px 26px -10px rgba(212,141,78,.9);transition:transform .25s,box-shadow .25s;" style-hover="transform:translateY(-2px);box-shadow:0 16px 32px -10px rgba(212,141,78,1);">Get a quote<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
       </sc-if>
       <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
         <a href="tel:4696051233" aria-label="Call" style="width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#d48d4e,#a85c2a);color:#fff;"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg></a>
@@ -52,7 +52,7 @@
         <a href="{{ it.href }}" onClick="{{ close }}" style="font-family:'Archivo',sans-serif;font-stretch:115%;font-weight:800;font-size:34px;text-transform:uppercase;color:{{ it.color }};text-decoration:none;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08);">{{ it.label }}</a>
       </sc-for>
       <div style="display:flex;flex-direction:column;gap:12px;margin-top:28px;">
-        <a href="Contact.dc.html" style="padding:17px 22px;border-radius:999px;background:linear-gradient(135deg,#d48d4e,#a85c2a);color:#fff;font-weight:700;font-size:16px;text-decoration:none;text-align:center;">Get a quote</a>
+        <a href="/contact" style="padding:17px 22px;border-radius:999px;background:linear-gradient(135deg,#d48d4e,#a85c2a);color:#fff;font-weight:700;font-size:16px;text-decoration:none;text-align:center;">Get a quote</a>
         <a href="tel:4696051233" style="padding:17px 22px;border-radius:999px;border:1px solid rgba(255,255,255,.25);color:#fff;font-weight:700;font-size:16px;text-decoration:none;text-align:center;">Call 469-605-1233</a>
       </div>
     </div>
@@ -78,7 +78,7 @@ class Component extends DCLogic {
     const narrow = this.state.w < 1000;
     const scrolled = this.state.y > 40;
     const open = this.state.open && narrow;
-    const pages = [['home', 'Home', 'index.html'], ['services', 'Services', 'Services.dc.html'], ['gallery', 'Gallery', 'Gallery.dc.html'], ['about', 'About', 'About.dc.html'], ['reviews', 'Reviews', 'Reviews.dc.html'], ['contact', 'Contact', 'Contact.dc.html']];
+    const pages = [['home', 'Home', '/'], ['services', 'Services', '/services'], ['gallery', 'Gallery', '/gallery'], ['about', 'About', '/about'], ['reviews', 'Reviews', '/reviews'], ['contact', 'Contact', '/contact']];
     return {
       items: pages.map(([k, label, href]) => ({ label, href, color: k === a ? '#e2a86c' : '#ffffff', bar: k === a ? 'scaleX(1)' : 'scaleX(0)' })),
       wide: !narrow, narrow, menuOpen: open,

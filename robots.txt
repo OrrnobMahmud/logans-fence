@@ -1,5 +1,26 @@
 User-agent: *
 Allow: /
-Disallow: /forms.html
+
+# AI answer and training crawlers: allowed (default policy)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# forms.html is kept out of the index via an X-Robots-Tag: noindex header (netlify.toml),
+# so it is intentionally NOT disallowed here: crawlers must be able to read the noindex.
 
 Sitemap: https://logansfence.netlify.app/sitemap.xml

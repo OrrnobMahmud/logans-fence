@@ -1,17 +1,23 @@
 # Logan's Fence LLC & Construction
 
-> Fence and welding contractor serving the Dallas–Fort Worth Metroplex, Texas. Builds wood fences, wrought (rod) iron fences, sliding gates and pergolas, and offers welding repairs plus junk haul-away and clean-ups. Fully bonded, 10+ years of experience.
+> Logan's Fence LLC & Construction is a fully bonded fence and welding contractor serving the Dallas–Fort Worth Metroplex, Texas, with 10+ years building wood fences, wrought iron fences, sliding gates and pergolas.
 
-- Phone: 469-605-1233 (call or text)
-- Email: logansfence@yahoo.com
-- Service area: all of Dallas–Fort Worth, including Dallas, Fort Worth, Arlington, Plano, Irving, Garland, Frisco, McKinney, Grand Prairie, Mesquite, Carrollton, Denton, Richardson, Lewisville, Allen and Rowlett
-- Quotes: request via the contact form or by phone; the crew visits on site to measure and price
+Logan's Fence also offers welding repairs, junk haul-away and property clean-ups. Phone: 469-605-1233 (call or text). Email: logansfence@yahoo.com. Service area: all of Dallas–Fort Worth, including Dallas, Fort Worth, Arlington, Plano, Irving, Garland, Frisco, McKinney, Grand Prairie, Mesquite, Carrollton, Denton, Richardson, Lewisville, Allen and Rowlett. Quotes are given after an on-site visit to measure and price.
 
-## Pages
+## Home
 
-- [Home](https://logansfence.netlify.app/): overview, services, recent work, reviews, service area
-- [Services](https://logansfence.netlify.app/services): wood fences, wrought iron fences, sliding gates, pergolas, welding, junk haul-away
-- [Gallery](https://logansfence.netlify.app/gallery): photos of completed projects
-- [About](https://logansfence.netlify.app/about): company background and values
-- [Reviews](https://logansfence.netlify.app/reviews): customer testimonials
-- [Contact](https://logansfence.netlify.app/contact): phone, email, quote request form
+- [Logan's Fence home](https://logansfence.netlify.app/): Logan's Fence builds wood fences, wrought iron fences, sliding gates and pergolas across Dallas–Fort Worth.
+
+## Services
+
+- [Fence and gate services](https://logansfence.netlify.app/services): Logan's Fence installs wood and wrought iron fences, sliding gates and pergolas, and provides welding and junk haul-away in DFW.
+
+## About
+
+- [About Logan's Fence](https://logansfence.netlify.app/about): Logan's Fence is a fully bonded DFW fence and welding contractor with more than 10 years of experience.
+- [Customer reviews](https://logansfence.netlify.app/reviews): Dallas–Fort Worth homeowners review Logan's Fence for on-time crews, one-day installs, fair prices and clean job sites.
+- [Contact and quotes](https://logansfence.netlify.app/contact): Request a fence quote from Logan's Fence by phone, email or the online form.
+
+## Optional
+
+- [Project gallery](https://logansfence.netlify.app/gallery): Photos of fences, gates and pergolas built by Logan's Fence across Dallas–Fort Worth.

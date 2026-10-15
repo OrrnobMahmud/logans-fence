@@ -67,6 +67,18 @@
     });
     onScroll();
   }
+  // Links use clean URLs (/services). When previewing raw files (no Netlify rewrites), map them back.
+  var MAP = { '/': 'index.html', '/services': 'Services.dc.html', '/gallery': 'Gallery.dc.html', '/about': 'About.dc.html', '/reviews': 'Reviews.dc.html', '/contact': 'Contact.dc.html' };
+  if (/\.html$/.test(location.pathname) || location.protocol === 'file:') {
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href^="/"]');
+      if (!a) return;
+      var parts = a.getAttribute('href').split('#'), file = MAP[parts[0]];
+      if (!file) return;
+      e.preventDefault();
+      location.href = file + (parts[1] ? '#' + parts[1] : '');
+    }, true);
+  }
   window.LF = {
     init: function () {
       scan(); [250, 800, 1800, 3500].forEach(function (t) { setTimeout(scan, t); });
