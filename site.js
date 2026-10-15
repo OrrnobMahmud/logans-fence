@@ -90,11 +90,30 @@
       }, 4000);
     },
     rescan: scan,
-    submit: function (formName, data) {
-      var body = new URLSearchParams(Object.assign({ 'form-name': formName }, data)).toString();
-      return fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: body })
-        .then(function (r) { return r.ok; })
-        .catch(function () { return false; });
+    // Formbold: POST FormData, ask for JSON. Resolves { ok, error }.
+    endpoint: 'https://formbold.com/s/910yz',
+    submit: function (formName, form) {
+      var fd = new FormData(form);
+      if (fd.get('bot-field')) return Promise.resolve({ ok: true }); // honeypot filled: silently drop
+      fd.delete('bot-field');
+      var invalid = Array.prototype.find.call(form.elements, function (el) {
+        if (el.willValidate && el.value !== el.value.trim()) el.value = el.value.trim();
+        return el.willValidate && !el.checkValidity();
+      });
+      if (invalid) { invalid.focus(); form.reportValidity(); return Promise.resolve({ ok: false, error: 'invalid' }); }
+      var phone = fd.get('phone');
+      if (phone && String(phone).replace(/\D/g, '').length < 10) {
+        var p = form.elements.phone; p.setCustomValidity('Please enter a 10-digit phone number.'); p.reportValidity();
+        p.addEventListener('input', function () { p.setCustomValidity(''); }, { once: true });
+        return Promise.resolve({ ok: false, error: 'invalid' });
+      }
+      fd.append('form', formName);
+      fd.append('page', location.pathname);
+      var ctrl = new AbortController(), t = setTimeout(function () { ctrl.abort(); }, 15000);
+      return fetch(this.endpoint, { method: 'POST', body: fd, headers: { Accept: 'application/json' }, signal: ctrl.signal })
+        .then(function (r) { return { ok: r.ok, error: r.ok ? null : 'http' }; })
+        .catch(function () { return { ok: false, error: 'network' }; })
+        .finally(function () { clearTimeout(t); });
     }
   };
 })();

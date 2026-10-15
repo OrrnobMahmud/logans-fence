@@ -6,18 +6,18 @@ Logan's Fence also offers welding repairs, junk haul-away and property clean-ups
 
 ## Home
 
-- [Logan's Fence home](https://logansfence.netlify.app/): Logan's Fence builds wood fences, wrought iron fences, sliding gates and pergolas across Dallas–Fort Worth.
+- [Logan's Fence home](https://logans-fence.netlify.app/): Logan's Fence builds wood fences, wrought iron fences, sliding gates and pergolas across Dallas–Fort Worth.
 
 ## Services
 
-- [Fence and gate services](https://logansfence.netlify.app/services): Logan's Fence installs wood and wrought iron fences, sliding gates and pergolas, and provides welding and junk haul-away in DFW.
+- [Fence and gate services](https://logans-fence.netlify.app/services): Logan's Fence installs wood and wrought iron fences, sliding gates and pergolas, and provides welding and junk haul-away in DFW.
 
 ## About
 
-- [About Logan's Fence](https://logansfence.netlify.app/about): Logan's Fence is a fully bonded DFW fence and welding contractor with more than 10 years of experience.
-- [Customer reviews](https://logansfence.netlify.app/reviews): Dallas–Fort Worth homeowners review Logan's Fence for on-time crews, one-day installs, fair prices and clean job sites.
-- [Contact and quotes](https://logansfence.netlify.app/contact): Request a fence quote from Logan's Fence by phone, email or the online form.
+- [About Logan's Fence](https://logans-fence.netlify.app/about): Logan's Fence is a fully bonded DFW fence and welding contractor with more than 10 years of experience.
+- [Customer reviews](https://logans-fence.netlify.app/reviews): Dallas–Fort Worth homeowners review Logan's Fence for on-time crews, one-day installs, fair prices and clean job sites.
+- [Contact and quotes](https://logans-fence.netlify.app/contact): Request a fence quote from Logan's Fence by phone, email or the online form.
 
 ## Optional
 
-- [Project gallery](https://logansfence.netlify.app/gallery): Photos of fences, gates and pergolas built by Logan's Fence across Dallas–Fort Worth.
+- [Project gallery](https://logans-fence.netlify.app/gallery): Photos of fences, gates and pergolas built by Logan's Fence across Dallas–Fort Worth.
